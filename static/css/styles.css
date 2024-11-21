@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Deep black */
+    color: #ffffff; /* White text */
+}
+
+h1, h2, h3, h5 {
+    color: #FFA500; /* Vibrant orange for headings */
+}
+
+a {
+    text-decoration: none;
+    color: #FFA500;
+}
+
+a:hover {
+    color: #FF6F00; /* Darker orange for hover effects */
+}
+
+/* Form Styling */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1E1E1E; /* Slightly lighter black for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+form label {
+    font-weight: bold;
+    color: #FFA500; /* Orange for form labels */
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #FFA500; /* Orange border for inputs */
+    background-color: #262626; /* Dark grey background */
+    color: #ffffff; /* White text */
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #FF6F00; /* Highlighted orange border */
+    box-shadow: 0 0 5px #FF6F00;
+}
+
+/* Button Styling */
+button {
+    background-color: #FFA500; /* Orange button */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #121212; /* Black text */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6F00; /* Darker orange on hover */
+}
+
+/* Card Styling */
+.card {
+    background-color: #1E1E1E; /* Slightly lighter black for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #262626;
+    color: #FFA500;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

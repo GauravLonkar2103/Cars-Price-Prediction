@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title" style="color:#FFA500">Prediction Result</h5>
+        <p style="color:white">The predicted selling price for <strong style="color:#FFA500">{{ name }}</strong> is <strong>Rs{{ prediction }}</strong>.</p>
+        <a href="/" class="btn btn-secondary">Predict Again</a>
+    </div>
+</div>
+{% endblock %}

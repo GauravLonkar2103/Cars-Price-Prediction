@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body">
+        <h5 style="color:white" class="card-title">Enter Car Details</h5>
+        <form action="/predict" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Car Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="year" class="form-label">Manufacturing Year</label>
+                <input type="number" class="form-control" id="year" name="year" required>
+            </div>
+            <div class="mb-3">
+                <label for="km_driven" class="form-label">Kilometers Driven</label>
+                <input type="number" class="form-control" id="km_driven" name="km_driven" required>
+            </div>
+            <div class="mb-3">
+                <label for="fuel" class="form-label">Fuel Type</label>
+                <select class="form-select" id="fuel" name="fuel" required>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                    <option value="LPG">LPG</option>
+                    <option value="Electric">Electric</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="seller_type" class="form-label">Seller Type</label>
+                <select class="form-select" id="seller_type" name="seller_type" required>
+                    <option value="Individual">Individual</option>
+                    <option value="Dealer">Dealer</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="transmission" class="form-label">Transmission</label>
+                <select class="form-select" id="transmission" name="transmission" required>
+                    <option value="Manual">Manual</option>
+                    <option value="Automatic">Automatic</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="owner" class="form-label">Owner Type</label>
+                <select class="form-select" id="owner" name="owner" required>
+                    <option value="First Owner">First Owner</option>
+                    <option value="Second Owner">Second Owner</option>
+                    <option value="Third Owner">Third Owner</option>
+                    <option value="Fourth & Above Owner">Fourth & Above Owner</option>
+                    <option value="Test Drive Car">Test Drive Car</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="seats" class="form-label">Seats</label>
+                <input type="number" class="form-control" id="seats" name="seats" required>
+            </div>
+            <div class="mb-3">
+                <label for="torque" class="form-label">Torque (Nm)</label>
+                <input type="number" step="0.1" class="form-control" id="torque" name="torque" required>
+            </div>
+            <div class="mb-3">
+                <label for="max_power" class="form-label">Max Power (32bhp-400bhp)</label>
+                <input type="number" step="0.1" class="form-control" id="max_power" name="max_power" required>
+            </div>
+            <div class="mb-3">
+                <label for="engine_cc" class="form-label">Engine Capacity (cc)</label>
+                <input type="number" step="0.1" class="form-control" id="engine_cc" name="engine_cc" required>
+            </div>
+            <div class="mb-3">
+                <label for="mileage" class="form-label">Mileage (km/l)</label>
+                <input type="number" step="0.1" class="form-control" id="mileage" name="mileage" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
